@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+   
+    <meta charset="utf-8">
+    <meta name="description" content="ToDo List">
+    <meta name="keywords" content="HTML,CSS,JavaScript">
+    <meta name="author" content="Wojciech Januszek">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <title>ToDo List</title>
+    
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/main.css">
+    
+</head>
+<body>
+  
+  <div class="wrapper">
+     <header><p class="logo">ToDo List</p></header>
+     
+     <div class="content">
+        
+         <div class="board target--border-ToDo"> <!--ToDo-->
+             <div class="board__header">
+                 <p class="board__header--name">To do</p>
+                 <div class="board__circle board__circle--ToDo">
+                     <p class="counter">0</p>
+                 </div>
+             </div>
+
+<!--             <div class="item item--normal-height">
+                 <div class="target target--border-ToDo target--normal-height">
+                     <p>Przykładowe zadaniePrzykładowe zadanie</p>
+                 </div>
+                 <div class="icon">
+                     <img src="icons/clear-button.png" name="delete" alt="delete">
+                 </div>
+                 
+             </div>-->
+
+             <div id="add" class="item">
+                 <input id="textAdd" type="text" name="card" placeholder="New card" class="target target--border-ToDo target--normal-height" autofocus>
+                 <div class="icon">
+                     <img src="icons/add.png" id="imgAdd" alt="add">
+                 </div>
+             </div>
+             
+<!--             <div id="add" class="item item--normal-height">
+                 <input type="text" class="target target--border-ToDo target--normal-height">
+                 <div class="icon">
+                     <img src="icons/clear-button.png" class="delete" alt="delete">
+                 </div>
+             </div>-->
+
+         </div>
+         
+         <div class="board target--border-Doing"> <!--Doing-->
+             <div class="board__header">
+                 <p class="board__header--name">Doing</p>
+                 <div class="board__circle board__circle--Doing">
+                     <p class="counter">0</p>
+                 </div>
+             </div>
+             
+<!--             <div id="doingDrop" class="item item--normal-height">
+                 <div class="target target--border-Doing target--normal-height">
+                     <p class="p--color-Doing">Jakiś cel</p>
+                 </div>
+                 <div class="icon">
+                     <img src="icons/left-pointing-arrow.png" alt="left arrow">
+                     <img src="icons/right-pointing-arrow.png" alt="right arrow">
+                     <img src="icons/add.png" id="imgAdd" alt="add">
+                 </div>
+             </div>-->
+<!--             <div class="item item--normal-height">
+                 <input type="text" class="target target--border-ToDo target--normal-height">
+                 <div class="icon">
+                     <img src="icons/left-pointing-arrow.png" alt="left arrow">
+                     <img src="icons/right-pointing-arrow.png" class="rightArrowImg" alt="right arrow">
+                     <img src="icons/clear-button.png" class="delete" alt="delete">
+                 </div>
+             </div>-->
+
+             
+         </div>
+         
+         <div class="board target--border-Done"> <!--Done-->
+             <div class="board__header">
+                 <p class="board__header--name">Done</p>
+                 <div class="board__circle board__circle--Done">
+                     <p class="counter">0</p>
+                 </div>
+             </div>
+             
+<!--             <div class="item item--normal-height">
+                 <div class="target target--border-Done target--normal-height">
+                     <p>Drop to add</p>
+                 </div>
+                 <div class="icon">
+                     <img src="icons/left-pointing-arrow.png" alt="left arrow">
+                     <img src="icons/add.png" id="imgAdd" alt="add">
+                 </div>
+             </div>-->
+             
+<!--             <div class="item item--normal-height">
+                 <input type="text" class="target target--border-ToDo target--normal-height">
+                 <div class="icon">
+                     <img src="icons/left-pointing-arrow.png" class="leftArrowImg" alt="left arrow">
+                     <img src="icons/clear-button.png" class="delete" alt="delete">
+                 </div>
+             </div>-->
+         </div>
+     </div>
+  </div>
+  
+  
+    <script src="js/script.js"></script>
+</body>
+</html>
